@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Professional,Business,Fashion,Portrait,portfolio,baby,maternity,headshot,glamour,beauty,photographer,modelling,advertising,commercial photographer,creative,artist,Campaign shoots,Lookbook,Catalogue shoots,Photography,Corporate Headshots,Retouching"
+    />
+    <meta
+      name="description"
+      content="Creative Fashion Portrait, Fashion portfolio, Capture your Memories with our Best Photography and Videography. located in Bengaluru, India"
+    />
+    <title>Eryka Kreations</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html"> <img src="images/Logo.png" /> </a>
+
+      <div class="nav_links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="package.html"> Package/Contact </a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="package">
+      <h1>Packages We Offer</h1>
+      <p>
+        We focus on delivering quality over quantity
+        <strong>"Less Is More" </strong>
+      </p>
+      <!-- Price cards -->
+      <div class="pricecards">
+        <!-- card 1 -->
+        <div class="cards">
+          <h3>Basic</h3>
+          <h4>2 Hour</h4>
+          <ul>
+            <li>1 Location</li>
+            <li>1 or 2 Outfits</li>
+            <li>12 Retouched Images</li>
+          </ul>
+          <h3>₹4000</h3>
+        </div>
+
+        <!-- card 2 -->
+        <div class="cards">
+          <h3>Standard</h3>
+          <h4>3 Hours</h4>
+          <ul>
+            <li>2 Location</li>
+            <li>2 or 3 Outfits</li>
+            <li>15 Retouched Images</li>
+          </ul>
+          <h3>₹5000</h3>
+        </div>
+
+        <!-- card 3 -->
+        <div class="cards">
+          <h3>Deluxe</h3>
+          <h4>4 Hours</h4>
+          <ul>
+            <li>3 Location</li>
+            <li>3 or 4 Outfits</li>
+            <li>20 Retouched Images</li>
+          </ul>
+          <h3>₹6000</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section>
+      <div class="contact-us">
+        <h1>Contact</h1>
+        <h2>I'm so glad you're here!</h2>
+        <p>
+          Give me all the details and I will get back to you ASAP. Can’t wait
+          for us to make some magic!
+        </p>
+      </div>
+
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <textarea
+            rows="8"
+            name="message"
+            placeholder="Tell me about your vision!"
+            required
+          ></textarea>
+          <br />
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/eryka30" target="blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/eryka_kreations/" target="blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      Copyright © All rights reserved.
+    </footer>
+
+    <!--------javascript for Toggle Menu------------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
